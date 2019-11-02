@@ -37,6 +37,84 @@ html отвечает лишь за разметку. За цвета и т.д. 
         <div> <img id="123" src="image.jpg" width="360" alt="4"></div>
         <form>
 
+
+
+
+            формальные параметры функции
+            const f =(a,b)=>a-b;
+            фактические
+            f =(6,5);
+            <!--            не связано с форм. Можно хоть буквы-->
+            <script>
+                //     const symb = 3;
+                //const pi = 3.14;
+                //
+                //const mul =symb**pi;
+                //console.log(mul);
+
+                //                const weight = 228;
+                //                const c = 300000000;
+                //                const energy = weight * (c ** 2);
+                //                console.log(energy);
+
+                //let внутри блока- новая верси переменной var на всю функцию
+
+                //                 const identify = (value) =>{//стрелочная функция
+                //                     return value;
+                //                };
+
+
+                //                    function identify(value){ //средней старости.
+                //                        return value;
+                // после ретерн функция не читается
+                //                    };
+                //                    
+
+
+                //squareOfSum(2,3)//25
+                //                const fun =(a, b)=>{
+                //                return a**2+2*a*b+b**2;
+                //                }; //let a =prompt("what to ask"a,b); считывание
+                //                let a =fun(2,3);
+                //                console.log(a);
+
+                //                if (smn >= 0) {
+                //                    a = b;
+                //                }
+                //
+                //                condition ? expr : expr2 //тернарный оператор. 1 или 0
+
+                //                const absValue = (num === 0|| num > 0) ? num : -num;//1=='1' true 1 === '1' false всегда
+                // //то же самое:
+                // let absValue
+                // if(num>=0){absValue=num;}else{absValue=-num}
+
+                const finalGrade = (exam, projects) => {
+                    let a = (exam > 90 || projects > 10) ? 100 : 0;
+                    a = (exam > 75 && projects > 5) ? 90 : 0;
+                    a = (exam > 50 && projects > 2) ? 75 : 0;  
+
+
+                    console.log(a);
+                    return a;
+                };
+                finalGrade (55,0);
+                
+//                4 types of error
+//                Syntax=заменить, добавить, удалить символы
+//                Reference error=perl проверяем на что ссылаемся. Возможно ошиб. название или забыли создать
+//                Type error = неверного типа const a=5; a();
+//                Logic error = проверяем код, не выводится эта ошибка
+
+            </script>
+
+
+
+
+
+
+
+
             <input placeholder="+8979878689761">
             <input type="checkbox" title="3">
             <input type="color">
