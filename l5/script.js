@@ -22,11 +22,16 @@ function add() {
 //динамические вещи это джава
 
 var current = "green";
+let colors =
+    ["none","none","none","none","none","none","none","none","none"];
 
 function turn(number) {
     //alert(number);
     console.log(number);
     $("#s" + number).css("background-color", current);
+    colors[number-1]=current;
+    console.log(colors);
+    
     if (current === "green") {
 
         current = "red";
@@ -35,8 +40,9 @@ function turn(number) {
     }
     $("#s"+number).prop("disabled", true);
     
-    for(let i = 0; i<10; i++){
-        
+    
+    for(let i = 0; i<10; i++){ 
+       //17 условий  
     }
 }
 
